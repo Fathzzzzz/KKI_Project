@@ -1,5 +1,6 @@
 {
   "name": "kki-project",
+  "homepage": "https://fathzzzzz.github.io/KKI_Project",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -8,8 +9,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+
   "dependencies": {
     "motion": "^13.5.0",
     "react": "^19.3.0",
